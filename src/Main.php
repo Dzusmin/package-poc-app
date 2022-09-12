@@ -10,10 +10,8 @@ class Main
 {
     public function main(): int
     {
-        $array = [];
         $service = new ArrayReturningService();
-        $newArray = $service->returnArray($array);
 
-        return count($array) - count($newArray);
+        return $service->returnInt();
     }
 }
