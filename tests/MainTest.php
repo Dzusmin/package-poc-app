@@ -13,6 +13,6 @@ class MainTest extends TestCase
     public function it_should_test_main(): void
     {
         $main = new Main();
-        $this->assertSame(0, $main->main());
+        $this->assertSame(-1, $main->main());
     }
 }
